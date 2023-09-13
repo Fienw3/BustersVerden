@@ -60,7 +60,29 @@
 
 </div>
 
+<div class="anmeldelse">
 
+<?php
+    $anmeldelse = new WP_Query(
+        array(
+            'post_type'      => 'anmeldelse', 
+            'posts_per_page' => -1,
+        )
+    );
+?>
+
+
+<?php while($anmeldelse->have_posts()): $anmeldelse->the_post() ?>
+    <p> <?php the_field('anmeldelse-navn'); ?> </p>
+    <p> <?php echo get_the_time('Y-m-d'); ?> </p>
+    <p> <?php the_field('anmeldelse-tekst'); ?> </p>
+    
+<?php endwhile ?>
+
+
+
+<?php wp_reset_postdata() ?>
+</div>
 
 
 <?php endwhile; ?>
