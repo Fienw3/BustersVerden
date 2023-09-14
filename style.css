@@ -2,3 +2,15 @@
     background-color: aqua;
     padding: 2rem;
 }
+
+.wpcf7-form-control {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+.bold {
+    font-weight: bold;
+}
