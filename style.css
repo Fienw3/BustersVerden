@@ -14,3 +14,27 @@ ul li {
 .bold {
     font-weight: bold;
 }
+
+@media screen and (max-width: 960px) {
+    .front-row-1 {
+        flex-direction: column-reverse;
+    }
+
+    .outer-box {
+        width: 100% !important;
+
+    }
+
+    .summary-ticket-box {
+        flex-direction: column-reverse;
+    }
+
+    .info-row-1 {
+        flex-direction: column;
+    }
+
+    .inner-box {
+        width: 100% !important;
+
+    }
+}

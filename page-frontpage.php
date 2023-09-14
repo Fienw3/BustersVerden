@@ -12,7 +12,7 @@
 <!--Frontpage row 1-->
 <div class="front-row-1 col-10 d-flex justify-content-center gap-3" style="height: 100%">
 
-<div style="width: 27%; height: 100%;">
+<div class="outer-box" style="width: 27%; height: 100%;">
     <!--Competiton box -->
     <!--Konkurrence formular-->
     <div class="box konkurrence-signup" style="margin-bottom: 1rem;">
@@ -32,10 +32,8 @@
     </div>
 </div>
 
-
-
 <!--Summary middle box-->
-<div class="box buster-summary" style="width: 46%; height: 100%">
+<div class="box inner-box" style="width: 46%; height: 100%">
     <h2>BUSTERS VERDEN</h2>
     <h3>Opført af amatørteateret Skarntyden Esbjerg</h3>
 <div>
@@ -52,7 +50,7 @@
 
 
 <!--Ticket box-->
-<div class="box tickets" style="width: 27%; height: 100%; display: flex; flex-direction: column;">
+<div class="box inner-box" style="width: 27%; height: 100%; display: flex; flex-direction: column;">
     <img url="Cat2.jpg" alt="PLACEHOLDER"> <!--PLaceholder pic, please replace-->
     <input class="køb-billet-link" type="submit" href="" value="KØB BILLET"><!--PLaceholder pic, please replace-->
 </img>

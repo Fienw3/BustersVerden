@@ -8,9 +8,9 @@
     </div>
 
     <div class="d-flex align-items-center flex-column" style="padding-bottom: 1rem;">
-        <div class="col-10 d-flex justify-content-center gap-3">
+        <div class="info-row-1 col-10 d-flex justify-content-center gap-3">
             <!-- Program -->
-            <div class="box" style="width: 60%;">
+            <div class="box inner-box" style="width: 60%;">
                 <!--Program loop (Prints the programs added to the custom post type "program")-->
                 <div class="program">
 
@@ -45,7 +45,7 @@
             </div>
 
             <!-- Skuespillere -->
-            <div class="box" style="width: 40%;">
+            <div class="box inner-box" style="width: 40%;">
                 <h2>SKUESPILLERE</h2>
                 <!--Skuespiller loop (Prints the actors added to the custom post type "skuespillere")-->
                 <div class="skuespillere">
