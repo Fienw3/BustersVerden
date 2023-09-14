@@ -12,13 +12,26 @@
 <!--Frontpage row 1-->
 <div class="front-row-1 col-10 d-flex justify-content-center gap-3" style="height: 100%">
 
+<div style="width: 27%; height: 100%;">
+    <!--Competiton box -->
+    <!--Konkurrence formular-->
+    <div class="box konkurrence-signup" style="margin-bottom: 1rem;">
+        <?php echo do_shortcode('[contact-form-7 id="9dd27a2" title="Konkurrence"]'); ?>
+    </div>
 
-<!--Competiton box -->
-<!--Konkurrence formular-->
-<div class="box konkurrence-signup" style="width: 27%; height: 100%">
-    <h2>VIND 2x BILLETER</h2>
-    <?php echo do_shortcode('[contact-form-7 id="9dd27a2" title="Konkurrence"]'); ?>
+    <div>
+        <div class="box skarntyden-info" style="height: 100%">
+            <h2>SKARNTYDEN ESBJERG</h2>
+            <img url="Cat2.jpg" alt="PLACEHOLDER"> <!--PLaceholder pic, please replace-->
+            <p>I Esbjerg Amatør Teater – Skarntyden laver vi to større forestillinger hvert år. Den ene er en forestilling for børn, der typisk ligger i vinterferien, og den anden er en gratis forestilling i forbindelse med Esbjerg Festuge. Der ind imellem laver har vi også andre aktiviteter
+            </p>
+            <div class="d-flex justify-content-center">
+                <input class="skarntyden-link" type="submit" href="https://eatskarntyden.dk/" value="LÆS MERE">
+            </div>
+        </div>
+    </div>
 </div>
+
 
 
 <!--Summary middle box-->
@@ -53,17 +66,7 @@
 
 
 <!--front-row-2-->
-<div class="front-row-2 col-10 d-flex gap-3">
-    <div class="box skarntyden-info" style="width: 26%; height: 100%">
-        <h2>SKARNTYDEN ESBJERG</h2>
-        <img url="Cat2.jpg" alt="PLACEHOLDER"> <!--PLaceholder pic, please replace-->
-        <p>I Esbjerg Amatør Teater – Skarntyden laver vi to større forestillinger hvert år. Den ene er en forestilling for børn, der typisk ligger i vinterferien, og den anden er en gratis forestilling i forbindelse med Esbjerg Festuge. Der ind imellem laver har vi også andre aktiviteter
-        </p>
-    <div class="d-flex justify-content-center">
-        <input class="skarntyden-link" type="submit" href="https://eatskarntyden.dk/" value="LÆS MERE">
-    </div>
-</div>
-</div>
+
 
 
 <?php endwhile; ?>
