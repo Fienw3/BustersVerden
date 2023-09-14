@@ -14,7 +14,7 @@
                 <!--Program loop (Prints the programs added to the custom post type "program")-->
                 <div class="program">
 
-                    <h1>PROGRAM</h1>
+                    <h2>PROGRAM</h2>
 
                     <?php
                         $program = new WP_Query(
@@ -46,7 +46,7 @@
 
             <!-- Skuespillere -->
             <div class="box" style="width: 40%;">
-                <h1>SKUESPILLERE</h1>
+                <h2>SKUESPILLERE</h2>
                 <!--Skuespiller loop (Prints the actors added to the custom post type "skuespillere")-->
                 <div class="skuespillere">
 
@@ -108,7 +108,7 @@
     <div class="d-flex align-items-center flex-column" style="padding-bottom: 1rem;">
         <!-- Sponsore -->
         <div class="box col-10 text-center">
-            <h1>VORES SPONSORE</h1>
+            <h2>VORES SPONSORE</h2>
         </div>
     </div>
 <?php endwhile; ?>

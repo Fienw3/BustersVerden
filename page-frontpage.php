@@ -36,7 +36,7 @@
 
 <!--Summary middle box-->
 <div class="box buster-summary" style="width: 46%; height: 100%">
-    <h1>BUSTERS VERDEN</h1>
+    <h2>BUSTERS VERDEN</h2>
     <h3>Opført af amatørteateret Skarntyden Esbjerg</h3>
 <div>
     <img url="Cat2.jpg" alt="PLACEHOLDER"> <!--PLaceholder pic, please replace-->
