@@ -25,15 +25,22 @@
                         );
                     ?>
 
-                    <div class="info-program d-flex">
+                    <div class="info-program d-flex flex-wrap">
                         <?php while($program->have_posts()): $program->the_post() ?>
                             <div>
                                 <div>
-                                    <p class="info-dato"> <?php the_field('program_dato'); ?> </p>
+                                    <h3 class="info-dato"> <?php the_field('program_dato'); ?> </h3>
                                 </div>
+                                <hr style="">
                                 <div>
-                                    <p> <?php the_field('program_tid_start'); ?> </p>
-                                    <p> <?php the_field('program_tid_slut'); ?> </p>
+                                <p>
+                                    <?php
+                                    $program_tid_start = get_field('program_tid_start');
+                                    $program_tid_slut = get_field('program_tid_slut');
+                                    
+                                    echo $program_tid_start . ' til ' . $program_tid_slut;
+                                    ?>
+                                </p>
                                     <p> <?php the_field('program_sted'); ?> </p>
                                 </div>
                             </div>
@@ -48,7 +55,7 @@
             <div class="box inner-box" style="width: 40%;">
                 <h2>SKUESPILLERE</h2>
                 <!--Skuespiller loop (Prints the actors added to the custom post type "skuespillere")-->
-                <div class="skuespillere">
+                <div class="skuespillere  d-flex flex-wrap">
 
                 <?php
                     $skuespiller = new WP_Query(
@@ -59,14 +66,21 @@
                     );
                 ?>
 
-                <?php while($skuespiller->have_posts()): $skuespiller->the_post() ?>
+                    <div class="skuespiller-info flex-column">
+                        <?php while($skuespiller->have_posts()): $skuespiller->the_post() ?>
+                            <div>
+                            <img src="<?php the_field('skuespillerens_billede'); ?>" alt="Billede af skuespilleren" style="width: 100px; height: 100px;">
+                            </div>
+                            <div>
+                            <p> <?php the_field('skuespillerens_navn'); ?> </p>
+                            <p> <?php the_field('skuespillerens_rolle'); ?> </p>
+                            </div>
+                        <?php endwhile ?>
+                    </div>
 
-                    <img src="<?php the_field('skuespillerens_billede'); ?>" alt="">
-                    <p> <?php the_field('skuespillerens_navn'); ?> </p>
-                    <p> <?php the_field('skuespillerens_rolle'); ?> </p>
-                <?php endwhile ?>
                 <?php wp_reset_postdata() ?>
                 </div>
+
             </div>
         </div>
     </div>
