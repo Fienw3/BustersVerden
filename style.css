@@ -1,6 +1,32 @@
+
+
 .box {
-    background-color: aqua;
+    background-color: #ffffff;
     padding: 2rem;
+}
+
+html, body {
+    background-image: url(assets/Busters\ verden\ final\ baggrund.svg);
+    background-size: 100%;
+    background-color: gray;
+}
+
+.Logo {
+    filter: drop-shadow(7px 7px #000000);
+    width: 70%;
+}
+
+hr:last-child {
+    display: none;
+}
+
+
+span {
+    font-weight: bold;
+}
+
+label {
+    width: 100%;
 }
 
 .wpcf7-form-control {
@@ -13,6 +39,92 @@ ul li {
 
 .bold {
     font-weight: bold;
+}
+
+.info-køb-billet-link {
+    width: 100%;
+}
+
+.skarntyden-link {
+    width: 100%;
+}
+
+h1 {
+font-family: "ff-providence-sans-web-pro", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h2{
+font-family: "ff-providence-sans-web-pro", sans-serif;
+font-weight: bold;
+font-style: bold;
+}
+
+h3{
+font-family: "helvetica", sans-serif;
+font-weight: bold;
+font-size: 1rem;
+}
+
+p{
+font-family: "helvetica", sans-serif;
+}
+
+input {
+font-family: "helvetica", sans-serif;
+/* font-family: "ff-providence-sans-web-pro", sans-serif; */
+font-weight: bold;
+font-size: 1rem;
+/* border-width: 2px; */
+}
+
+.wpcf7-submit{
+    background-color: #0f0f0f;
+    color: #ffffff;
+    border-color: #8E713D;
+    border: none;
+}
+
+.info-køb-billet-link {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    border-color: #8E713D;
+    border: none;
+}
+
+.skarntyden-link {
+    background-color: #0f0f0f; 
+    color: #ffffff;
+    border-color: #8E713D;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+font-family: "helvetica", sans-serif;
+font-weight: bold;
+font-size: 1rem;
+padding: 0.5rem 2rem;
+
+background-color: #0f0f0f;
+color: #ffffff;
+border-color: #8E713D;
+border: none;
+}
+
+.footer-box {
+    width: 100%;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+.some-icons {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 960px) {
@@ -36,5 +148,24 @@ ul li {
     .inner-box {
         width: 100% !important;
 
+    }
+
+    .ticket-box {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .logo {
+        width: 100% !important;
+    }
+
+    .info-program {
+        flex-direction: column;
+    }
+
+    .inner-info-program {
+        width: 100% !important;
     }
 }

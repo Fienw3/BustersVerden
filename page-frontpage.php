@@ -1,11 +1,20 @@
 <?php get_header(); ?>
 
+
+
 <!-- Display hello world on the front page -->
 <?php while (have_posts()) : the_post(); ?>
 
 <div class="front-overall-1 d-flex align-items-center flex-column" style="padding-bottom: 1rem; height: 100%">
-<div>
-    <h1>BUSTERS VERDEN</h1>
+<div class="d-flex col-10 flex-column">
+
+<div class="d-flex justify-content-center" style="margin-top: 2rem; margin-bottom: 1rem;">
+        <img class="Logo" src="<?php echo get_stylesheet_directory_uri() ?>/assets/logo.png" alt="" style="height: auto;">
+    </div>
+
+    <div class="d-flex justify-content-end" style="margin-bottom: 1rem;">
+        <a href="http://busters-verden.local/infopage/"><button>➝ INFO</button></a>
+    </div>
 </div>
 
 
@@ -26,7 +35,9 @@
             <p>I Esbjerg Amatør Teater – Skarntyden laver vi to større forestillinger hvert år. Den ene er en forestilling for børn, der typisk ligger i vinterferien, og den anden er en gratis forestilling i forbindelse med Esbjerg Festuge. Der ind imellem laver har vi også andre aktiviteter
             </p>
             <div class="d-flex justify-content-center">
-                <input class="skarntyden-link" type="submit" href="https://eatskarntyden.dk/" value="LÆS MERE">
+                <a href="https://eatskarntyden.dk/" style="width: 100%">
+                <input class="skarntyden-link" type="submit" value="LÆS MERE">
+                </a>
             </div>
         </div>
     </div>
@@ -50,9 +61,10 @@
 
 
 <!--Ticket box-->
-<div class="box inner-box" style="width: 27%; height: 100%; display: flex; flex-direction: column;">
-    <img url="Cat2.jpg" alt="PLACEHOLDER"> <!--PLaceholder pic, please replace-->
-    <input class="køb-billet-link" type="submit" href="" value="KØB BILLET"><!--PLaceholder pic, please replace-->
+<div class="ticket-box" style="width: 27%; height: 100%; display: flex; flex-direction: column;">
+    <a href="https://mhe.dk/program">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/billet-website.png" alt="" style="height: auto; width: 100%;">
+    </a>
 </img>
 </div>
 
@@ -70,8 +82,13 @@
 <?php endwhile; ?>
 <?php wp_reset_postdata(); ?>
 
-</div>
+
 </div> <!--front-overall-1 slut-->
 
+<div class="d-flex justify-content-center">
+    <div class="col-10 d-flex justify-content-end" style="margin-bottom: 1rem;">
+        <a href=""><button>⭡ OP</button></a>
+    </div>
+</div>
 
 <?php get_footer(); ?>
