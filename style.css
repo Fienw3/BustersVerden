@@ -109,12 +109,21 @@ font-family: "helvetica", sans-serif;
 font-weight: bold;
 font-size: 1rem;
 padding: 0.5rem 2rem;
-
-background-color: #0f0f0f;
-color: #ffffff;
-border-color: #8E713D;
-border: none;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    border-color: #8E713D;
+    border: none;
 }
+
+
+.info-program-link {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    border-color: #8E713D;
+    border: none;
+}
+
+
 
 .footer-box {
     width: 100%;
