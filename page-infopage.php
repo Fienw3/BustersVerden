@@ -6,7 +6,7 @@
 <div class="d-flex col-10 flex-column">
 
     <div class="d-flex justify-content-center" style="margin-top: 2rem; margin-bottom: 1rem;">
-        <img class="Logo" src="<?php echo get_stylesheet_directory_uri() ?>/assets/logo.png" alt="Busters Verden Logo" style="height: auto;">
+        <img class="Logo" src="<?php echo get_stylesheet_directory_uri() ?>/assets/logo.png" alt="" style="height: auto;">
     </div>
     <div>
         <a href="http://busters-verden.local/"><button>⭠ FORSIDE</button></a>
@@ -61,7 +61,7 @@
                 </div>
                 <div style="margin: 2rem;"></div>
                 <a href="https://mhe.dk/program" style="width: 100%">
-                <input class="info-køb-billet-link" type="submit" alt="Link til at købe biletter på musikhusets hjemmeside" value="KØB BILLET"><!--PLaceholder pic, please replace-->
+                <input class="info-køb-billet-link" type="submit" href="" value="KØB BILLET"><!--PLaceholder pic, please replace-->
                 </a>
             </div>
 
